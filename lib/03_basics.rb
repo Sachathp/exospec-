@@ -32,5 +32,10 @@ def array_42(array)
     end
 end
 
+def magic_array(array)
+    result = array.flatten.map{|i| i * 2}.uniq.reject {|i| i % 3 == 0}.sort 
+    return result 
+end
+
 
 
